@@ -20,7 +20,7 @@ print(result)
 print(date_range_start)
 result = type(date_range_start)
 
-static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/"
+static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/style"
 
 area_names = pesticides['Area'].unique()
 area_name_dict = {l: l for l in area_names}
@@ -28,7 +28,7 @@ area_name_dict = {l: l for l in area_names}
 app_ui = ui.page_fluid(
     ui.tags.head(
         ui.tags.link(rel="stylesheet",
-                     href="{static_content_url/style/styles.css}"),
+                     href="{static_content_url}/styles.css"),
         ui.tags.div(class_="input_container")),
     ui.panel_title("Pesticides Usage by Country"),
     ui.layout_sidebar(
