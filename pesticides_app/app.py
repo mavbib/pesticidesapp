@@ -68,5 +68,5 @@ def server(input, output, session):
         return g
 
 
-style = Path(__file__).parent / "style"
-app = App(app_ui, server, static_assets=style)
+# style = Path(__file__).parent / "style" static_assets=style
+app = App(app_ui, server)
