@@ -41,7 +41,7 @@ app_ui = ui.page_fluid(
 
     ),
     ui.tags.p(
-        "The data are from Food and Agriculture Organisation of the United Nations. Some figures are official and some are estimated"),
+        "The data are from Food and Agriculture Organisation of the United Nations. Some figures are official and some are estimated."),
     ui.a("FAO.org", href="https://www.fao.org/home/en"),
     ui.tags.p("Please note: adding country will change the scale of metric tonnes.")
 )
