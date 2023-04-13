@@ -68,6 +68,5 @@ def server(input, output, session):
         return g
 
 
-app = App(app_ui, server)
-# www_dir = Path(__file__).parent / "style"
-# app = App(ui=app_ui, server=server, static_assets=www_dir)
+style = Path(__file__).parent / "style"
+app = App(app_ui, server, static_assets=style)
