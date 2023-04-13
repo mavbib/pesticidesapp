@@ -21,13 +21,13 @@ print(date_range_start)
 result = type(date_range_start)
 
 static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/style"
-
+static_content_local = "C:\Users\user\shinypesticides\pesticides_app"
 area_names = pesticides['Area'].unique()
 area_name_dict = {l: l for l in area_names}
 
 app_ui = ui.page_fluid(
     ui.tags.head(
-        ui.tags.link(rel="stylesheet", href="{static_content_url}"),
+        ui.tags.link(rel="stylesheet", href="{static_content_local}"),
         ui.tags.div(class_="input_container")),
     ui.panel_title("Pesticides Usage by Country"),
     ui.layout_sidebar(
