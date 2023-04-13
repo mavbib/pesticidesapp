@@ -20,6 +20,8 @@ print(result)
 print(date_range_start)
 result = type(date_range_start)
 
+static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/style/styles.css"
+
 area_names = pesticides['Area'].unique()
 area_name_dict = {l: l for l in area_names}
 
@@ -66,5 +68,5 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)
-www_dir = Path(__file__).parent / "style"
-app = App(ui=app_ui, server=server, static_assets=www_dir)
+# www_dir = Path(__file__).parent / "style"
+# app = App(ui=app_ui, server=server, static_assets=www_dir)
