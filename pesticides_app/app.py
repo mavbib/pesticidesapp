@@ -20,7 +20,7 @@ print(result)
 print(date_range_start)
 result = type(date_range_start)
 
-static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/style/styles.css"
+static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/main/pesticides_app/style"
 
 area_names = pesticides['Area'].unique()
 area_name_dict = {l: l for l in area_names}
