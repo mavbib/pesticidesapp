@@ -24,17 +24,17 @@ static_content_url = "https://raw.githubusercontent.com/mavbib/pesticidesapp/mai
 
 area_names = pesticides['Area'].unique()
 area_name_dict = {l: l for l in area_names}
-
+style_color = "color:#444444;"
+style_bg = "background-color: #ffb265;"
 app_ui = ui.page_fluid(
     ui.tags.head(
 
         ui.tags.link(rel="stylesheet", href="{static_content_url}/styles.css")),
-    ui.tags.div(style="color: #444444;", children=[
 
-        ui.panel_title("Pesticides Usage by Country")
-    ]),
+
+    ui.panel_title("Pesticides Usage by Country", style=style_color),
     ui.tags.body(
-        ui.tags.div(style="background-color: #ffb265;", children=[
+        ui.tags.div(style=style_bg, children=[
             ui.layout_sidebar(
 
                 ui.panel_sidebar(ui.input_selectize(id="Area", label="Areas",
